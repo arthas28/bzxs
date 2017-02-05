@@ -44,7 +44,14 @@ module.exports =
                         'less': 'style!css!less'
                     }
                 }
-            }
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]?[hash]'
+                }
+              }
             //这里肯定要加入n个loader 譬如vue-loader、babel-loader、css-loader等等
         ]
     },
