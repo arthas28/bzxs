@@ -33,7 +33,18 @@ module.exports =
     },
     module:{
         loaders:[
+            {test: /\.css$/, loader: 'style!css'},
+            {test: /\.less$/, loader: 'style!css!less'},
             {test:/\.js$/, loader:"babel-loader", query:{compact:true}},
+            {
+                test:/\.vue$/, 
+                loader:"vue-loader",
+                options: {
+                    loaders: {
+                        'less': 'style!css!less'
+                    }
+                }
+            }
             //这里肯定要加入n个loader 譬如vue-loader、babel-loader、css-loader等等
         ]
     },
