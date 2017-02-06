@@ -20,7 +20,7 @@ var router = new VueRouter({
 
 var vm = new Vue({
     el: '#indexWrapHome',
-    data: { myTime: '2017-01-03' },
+    data: { myTime: '2017-01-04' },
     router: router,
     components: {
     	Assets

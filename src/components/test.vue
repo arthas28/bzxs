@@ -1,6 +1,7 @@
 <template>
   <div id="test_com">
     {{msg}}
+    <!-- <img src="../assets/imges/bzxs_logo.jpg"> -->
   </div>
 </template>
 
