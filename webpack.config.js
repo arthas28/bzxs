@@ -57,10 +57,10 @@ module.exports =
     },
     plugins:[
         new HtmlWebpackPlugin({
-            filename: __dirname+'/build/html/index.html',   //目标文件
+            filename: __dirname+'/build/index.html',   //目标文件
             template: __dirname+'/src/index.html', //模板文件
             inject:'body',
-            hash:true,  //代表js文件后面会跟一个随机字符串,解决缓存问题
+            hash:true, 
             chunks:["index"]
         })
     ]

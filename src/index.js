@@ -13,10 +13,12 @@ var routes = [
 ];
 
 var router = new VueRouter({
-	routes: routes
+	routes: routes,
+	hashbang: false,
+	mode: 'history'
 });
 
-new Vue({
+var vm = new Vue({
     el: '#indexWrapHome',
     data: { myTime: '2017-01-03' },
     router: router,
